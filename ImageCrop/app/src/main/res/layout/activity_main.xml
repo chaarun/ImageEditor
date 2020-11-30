@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgGalleryInfo"
+                style="@style/ImageButtonStyle"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimary"
+                android:onClick="showImageExifInfo"
+                app:srcCompat="@drawable/outline_info_24"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtGallery"
+                style="@style/TitleTextStyle"
+                android:background="@color/colorPrimary"
+                android:text="@string/action_gallery"
+                 />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgGallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtGallery"
+                android:background="@color/black"
+                android:scaleType="centerInside" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/img"
+            android:onClick="onGalleryFABClick"
+            app:srcCompat="@drawable/baseline_gallery_24"
+            style="@style/FabStyle"
+            android:background="@color/colorPrimary"
+            tools:ignore="VectorDrawableCompat"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

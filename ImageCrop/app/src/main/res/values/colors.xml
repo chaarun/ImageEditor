@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/pink_600</color>
+    <color name="colorPrimaryLight">@color/pink_300</color>
+    <color name="colorPrimaryDark">@color/pink_700</color>
+    <color name="colorAccent">@color/teal_500</color>
+</resources>
